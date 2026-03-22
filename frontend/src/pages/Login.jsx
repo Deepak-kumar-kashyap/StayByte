@@ -46,7 +46,7 @@ function Login() {
                                       < FaArrowLeftLong className='w-[30px] h-[250px] text-[white]'/>
                                   </div>
                     <form action="" onSubmit={handleLogin} className='max-w-[900px] w-[90%] h-[600px] flex items-center justify-center flex-col md:items-start gap-10'>
-                        <h1 className='text-[30px] text-black '>Welcome To Airbnb</h1>
+                        <h1 className='text-[30px] text-black '>Welcome To StayByte</h1>
                         
                         <div className='w-[90%] flex items-start justify-start flex-col gap-[10px] '>
                             <label htmlFor="email" className='text-[20px]'>Email</label>

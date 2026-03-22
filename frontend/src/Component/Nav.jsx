@@ -31,7 +31,7 @@ function Nav() {
 
   const handleLogOut = async () => {
     try {
-      let result= await axios.post(serverUrl + "/api/auth/logout", {withCredentials:true})
+      let result= await axios.post(serverUrl + "/api/auth/logout", {}, {withCredentials:true})
       setUserData(null)
       console.log(result)
     } catch (error) {

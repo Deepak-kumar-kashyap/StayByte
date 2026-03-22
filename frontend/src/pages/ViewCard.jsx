@@ -42,11 +42,11 @@ function ViewCard() {
             let outDate = new Date(checkOut)
             let n = (outDate - inDate) / (24 * 60 * 60 * 1000)
             setNight(n)
-            let airBnbCharge = (cardDetails.rent * (7 / 100))
+            let stayByteCharge = (cardDetails.rent * (7 / 100))
             let tax = (cardDetails.rent * (7 / 100))
 
             if (n > 0) {
-                setTotal((cardDetails.rent * n) + airBnbCharge + tax)
+                setTotal((cardDetails.rent * n) + stayByteCharge + tax)
             }
             else {
                 setTotal(0)
@@ -292,7 +292,7 @@ function ViewCard() {
                         </p>
                         <p className='w-[100%] flex justify-between items-center px-[20px] border-b-[1px] border-gray-500 pb-[10px]' >
                             <span className='font-semibold'>
-                                Airbnb Charge
+                                StayByte Charge
                             </span>
                             <span>{cardDetails.rent*7/100}</span>
                         </p>
