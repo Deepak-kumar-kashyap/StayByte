@@ -43,9 +43,10 @@ npm install
 Create a `.env` file in the `backend` directory and add the following:
 ```env
 PORT=8000
-MONGODB_URI=your_mongodb_uri
+MONGODB_URL=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/staybyte
 JWT_SECRET=your_jwt_secret
 FRONTEND_URL=http://localhost:5173
+NODE_ENV=development
 
 # Cashfree Credentials
 CASHFREE_APP_ID=your_cashfree_app_id
@@ -57,6 +58,12 @@ CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 ```
+
+To load the demo data for listings and users, run:
+```bash
+npm run seed
+```
+
 Run the backend:
 ```bash
 npm run dev
